@@ -1,0 +1,173 @@
+/* Import Nunito Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+/* Apply Nunito Sans font to entire app */
+.App {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-weight: 800;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.hero-section .lead {
+  font-size: 1.25rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+/* Features Section Styles */
+.features-section {
+  background-color: #f8f9fa;
+}
+
+.feature-icon {
+  transition: transform 0.3s ease;
+}
+
+.feature-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Card hover effects */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
+}
+
+/* Reviews Section Styles */
+.reviews-section {
+  background-color: white;
+}
+
+/* Pricing Section Styles */
+.pricing-section {
+  background-color: #f8f9fa;
+}
+
+.pricing-section .card {
+  border-radius: 15px;
+}
+
+.pricing-section .card.border-primary {
+  border-width: 2px !important;
+}
+
+/* Footer Styles */
+.footer-section {
+  background-color: #212529;
+}
+
+.footer-section a:hover {
+  color: white !important;
+  text-decoration: underline !important;
+}
+
+.footer-section .social-icons a {
+  transition: opacity 0.3s ease;
+}
+
+.footer-section .social-icons a:hover {
+  opacity: 0.7;
+}
+
+/* Custom button styles */
+.btn {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Custom badge styles */
+.badge {
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-section {
+    min-height: 60vh;
+    padding: 3rem 0;
+  }
+  
+  .hero-section h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero-section .lead {
+    font-size: 1.1rem;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5a6fd8;
+}
+
+/* Animation for feature icons */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.feature-icon {
+  animation: pulse 2s infinite;
+}
+
+/* Custom text selection */
+::selection {
+  background-color: #667eea;
+  color: white;
+}
+
+/* Focus styles for accessibility */
+.btn:focus,
+.card:focus {
+  outline: 2px solid #667eea;
+  outline-offset: 2px;
+}
