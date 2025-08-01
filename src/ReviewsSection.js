@@ -12,20 +12,20 @@ const ReviewsSection = () => (
         </Col>
       </Row>
       <Row>
-        <Col lg={4} className="mb-4">
-          <Card className="h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="100">
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="100">
             <Card.Body className="p-4">
               <div className="d-flex mb-3">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} className="text-warning me-1" />
                 ))}
               </div>
-              <Card.Text className="mb-3">
+              <Card.Text className="mb-4">
                 "TaskFlow has completely transformed how I manage my daily tasks. The interface is intuitive and the features are exactly what I needed."
               </Card.Text>
               <div className="d-flex align-items-center">
-                <div className="bg-primary rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px'}}>
-                  <span className="text-white fw-bold">S</span>
+                <div className="reviewer-avatar bg-primary me-3">
+                  <span className="fw-bold">S</span>
                 </div>
                 <div>
                   <h6 className="mb-0 fw-bold">Sarah Johnson</h6>
@@ -35,20 +35,20 @@ const ReviewsSection = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} className="mb-4">
-          <Card className="h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="200">
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="200">
             <Card.Body className="p-4">
               <div className="d-flex mb-3">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} className="text-warning me-1" />
                 ))}
               </div>
-              <Card.Text className="mb-3">
+              <Card.Text className="mb-4">
                 "The team collaboration features are amazing. We've increased our productivity by 40% since switching to TaskFlow."
               </Card.Text>
               <div className="d-flex align-items-center">
-                <div className="bg-success rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px'}}>
-                  <span className="text-white fw-bold">M</span>
+                <div className="reviewer-avatar bg-success me-3">
+                  <span className="fw-bold">M</span>
                 </div>
                 <div>
                   <h6 className="mb-0 fw-bold">Mike Chen</h6>
@@ -58,24 +58,93 @@ const ReviewsSection = () => (
             </Card.Body>
           </Card>
         </Col>
-        <Col lg={4} className="mb-4">
-          <Card className="h-100 border-0 shadow-sm" data-aos="fade-up" data-aos-delay="300">
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="300">
             <Card.Body className="p-4">
               <div className="d-flex mb-3">
                 {[...Array(5)].map((_, i) => (
                   <FaStar key={i} className="text-warning me-1" />
                 ))}
               </div>
-              <Card.Text className="mb-3">
+              <Card.Text className="mb-4">
                 "The analytics feature helps me understand my work patterns better. Highly recommended for anyone serious about productivity."
               </Card.Text>
               <div className="d-flex align-items-center">
-                <div className="bg-info rounded-circle d-flex align-items-center justify-content-center me-3" style={{width: '40px', height: '40px'}}>
-                  <span className="text-white fw-bold">A</span>
+                <div className="reviewer-avatar bg-info me-3">
+                  <span className="fw-bold">A</span>
                 </div>
                 <div>
                   <h6 className="mb-0 fw-bold">Alex Rodriguez</h6>
                   <small className="text-muted">Freelancer</small>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="400">
+            <Card.Body className="p-4">
+              <div className="d-flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="text-warning me-1" />
+                ))}
+              </div>
+              <Card.Text className="mb-4">
+                "Finally, a task management tool that actually works! The mobile app is fantastic and syncs perfectly with the desktop version."
+              </Card.Text>
+              <div className="d-flex align-items-center">
+                <div className="reviewer-avatar bg-warning me-3">
+                  <span className="fw-bold">E</span>
+                </div>
+                <div>
+                  <h6 className="mb-0 fw-bold">Emma Davis</h6>
+                  <small className="text-muted">Marketing Director</small>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="500">
+            <Card.Body className="p-4">
+              <div className="d-flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="text-warning me-1" />
+                ))}
+              </div>
+              <Card.Text className="mb-4">
+                "The time tracking feature is a game-changer. I can now see exactly where my time goes and optimize accordingly."
+              </Card.Text>
+              <div className="d-flex align-items-center">
+                <div className="reviewer-avatar bg-danger me-3">
+                  <span className="fw-bold">D</span>
+                </div>
+                <div>
+                  <h6 className="mb-0 fw-bold">David Kim</h6>
+                  <small className="text-muted">Software Engineer</small>
+                </div>
+              </div>
+            </Card.Body>
+          </Card>
+        </Col>
+        <Col lg={4} md={6} className="mb-4">
+          <Card className="review-card h-100 border-0" data-aos="fade-up" data-aos-delay="600">
+            <Card.Body className="p-4">
+              <div className="d-flex mb-3">
+                {[...Array(5)].map((_, i) => (
+                  <FaStar key={i} className="text-warning me-1" />
+                ))}
+              </div>
+              <Card.Text className="mb-4">
+                "Customer support is outstanding. They helped us migrate from our old system seamlessly. Highly recommend!"
+              </Card.Text>
+              <div className="d-flex align-items-center">
+                <div className="reviewer-avatar bg-secondary me-3">
+                  <span className="fw-bold">L</span>
+                </div>
+                <div>
+                  <h6 className="mb-0 fw-bold">Lisa Wang</h6>
+                  <small className="text-muted">Operations Manager</small>
                 </div>
               </div>
             </Card.Body>
